@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var str1 = 'Today is';
+        var str2 = '      a beautiful day     '
+        var str3 = ' In Hawaii.     '
+        result = str1 + str2 + str3
+        console.log(result)
+
+
+        //// Question 2:
+        // var enteredAlphabet = 'd' or "D"
+        // Write a program to check vowel, consonant or non-alphabet using switch case. Change value of enteredAlphabet and check if your code works fine.
+
+        var enteredAlphabet = '1'
+        switch (enteredAlphabet) {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+            case 'A':
+            case 'E':
+            case 'I':
+            case 'O':
+            case 'U':
+                console.log('Question2 => Entered Alphabet is:','Letter is vowel')
+                break;
+
+            case 'b': case 'B':
+            case 'c': case 'C':
+            case 'd': case 'D':
+            case 'f': case 'F':
+            case 'g': case 'G':
+            case 'h': case 'H':
+            case 'j': case 'J':
+            case 'k': case 'K':
+            case 'l': case 'L':
+            case 'm': case 'M':
+            case 'n': case 'N':
+            case 'p': case 'P':
+            case 'q': case 'Q':
+            case 'r': case 'R':
+            case 's': case 'S':
+            case 't': case 'T':
+            case 'v': case 'V':
+            case 'w': case 'W':
+            case 'x': case 'X':
+            case 'y': case 'Y':
+            case 'z': case 'Z':
+                console, log('Question2 => Entered Alphabet is:','letter is consonant')
+                break;
+
+            default:
+                console.log('Question2 => Entered Alphabet is:','Non-alphabet')
+        }
+
+
+        // Write a JavaScript program to create menu driven calculator that performs basic arithmetic operations (add, subtract, multiply and divide) using switch case. The calculator should input two numbers and an operator: +, -, *, / from the user. It should perform operation according to the operator entered and must take input in given format.
+        var firstnum = prompt('enter the first no.');
+      var secondnum = prompt('enter the second no.');
+      var selection = prompt('enter the operator * or / or + or -');
+
+   switch(selection){ case '+':
+            console.log("Question3 => Sum is:", (parseInt(firstnum)+ parseInt(secondnum) ))
+           break;
+           case '-':
+           console.log("Question3 => Difference is:", ((firstnum) - (secondnum)))
+           break;
+           case '*':
+           console.log("Question3 => Multiply is:", ((firstnum) * (secondnum)))
+           break;
+           case '/':
+           console.log("Question3 => Division is:", ((firstnum) / (secondnum)))
+           break;
+           case '+':
+            console.log("Question3 => Sum is:", (parseInt(firstnum)+ parseInt(secondnum) ))
+           break;
+           default:
+           console.log("Question3 => Please use correct operator")
+                    }
+
+      
+       
+       // Question 4:
+// Write a JavaScript program to input sides of a triangle and check whether a triangle is equilateral, scalene or isosceles triangle using if else.
+// Properties of triangle:
+// A triangle is said Equilateral Triangle, if all its sides are equal. If a, b, c are three sides of triangle. Then, the triangle is equilateral only if a == b == c.
+// A triangle is said Isosceles Triangle, if its two sides are equal. If a, b, c are three sides of triangle. Then, the triangle is isosceles if either a == b or a == c or b == c.
+// A triangle is said Scalene Triangle, if none of its sides are equal.
+
+    var A  = 150
+    var B = 250
+    var C = 50
+      if (A == B && B == C) {
+    console.log('que4 => A triangle is said Equilateral Triangle ')
+    }
+     else if (A == B && B != C) {
+        console.log('que4 => A triangle is said Isosceles Triangle ')
+    }
+    else if (A != B && B == C) {
+        console.log('que4 => A triangle is said Isosceles Triangle ')
+    }
+   else if(A != B != C != A) {
+        console.log('que4 => A triangle is said Scalene Triangle ')
+    }
+else{
+    console.log('que4 => Inappropriate Information')
+}
+ 
+
+// Question 5:
+// Write a JavaScript program to input electricity unit charge and calculate the total electricity bill according to the given condition:
+// For first 50 units Rs. 0.50/unit
+// For next 100 units Rs. 0.75/unit
+// For next 100 units Rs. 1.20/unit
+// For unit above 250 Rs. 1.50/unit. An additional surcharge of 20% is added to the bill.
+// For example, input: 20 units then bill is Rs10
+// Total Units: 300
+// 50 * 0.5 = 25         0 to 50
+// 100 * 0.75 = 75      
+// 100 * 1.2 = 120      
+// 50 * 1.5 = 75          
+// Total = 295 + 20% surcharge on 295
+// Result = INR 354
+
+
+    //console.log("Q5 END =====================")
+       
+//que5
+    electricityUnitCharge = 300
+     billValue = 0
+if(electricityUnitCharge<=50){
+    billValue  = electricityUnitCharge*0.50
+}
+else if(electricityUnitCharge <=150){
+    billValue = 50 * 0.50 + (electricityUnitCharge-50)*0.75
+   }
+else if(electricityUnitCharge <=250){
+    billValue = 50 * 0.50 + 100 * 0.75 + (electricityUnitCharge-150)*1.2
+   }
+else if(electricityUnitCharge>250){
+    billValue = 50*0.50 + 100*0.75 + 100*1.2 + (electricityUnitCharge-250) *1.5
+  }
+if
+( billValue>250){
+    electricityUnitCharge =  billValue +  billValue*0.2
+}
+console.log('billValue =',billValue)
+console.log('electricityUnitCharge =',electricityUnitCharge)
+
+
+
+    </script>
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
